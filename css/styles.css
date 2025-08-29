@@ -338,23 +338,15 @@ p {
 /* Hero Section */
 
 .hero-section {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 72px;
+  padding-bottom: 72px;
   max-width: 320px;
-  background-color: #2e2f42;
-  background-position: center;
+  background: #2e2f42;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  align-items: stretch;
-  padding: 72px 0;
-  margin: 0 auto;
-}
-
-.hero-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 72px;
+  background-position: center;
 }
 
 @media screen and (max-width: 767px) {
