@@ -91,6 +91,7 @@ p {
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .nav-list, .contacts {
@@ -132,6 +133,18 @@ p {
   letter-spacing: 0.02em;
   color: #434455;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger-btn {
+  padding: 0;
+  border: none;
+  background: transparent;
+  padding-right: 0px;
+}
+
+.burger-icon {
+  display: block;
+  fill: #2f2f37;
 }
 
 @media screen and (min-width: 768px) {
@@ -309,6 +322,7 @@ p {
 
 .mobile-contacts {
   margin-bottom: 40px;
+  font-style:normal;
 }
 
 .footer-social-media-list.mobile {
@@ -324,55 +338,61 @@ p {
 /* Hero Section */
 
 .hero-section {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 72px;
-  padding-bottom: 72px;
-
   max-width: 320px;
-
-  background: #2e2f42;
+  background-color: #2e2f42;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  width: 100%;
+  align-items: stretch;
+  padding: 72px 0;
+  margin: 0 auto;
 }
 
-@media (max-width: 767px) {
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 72px;
+}
+
+@media screen and (max-width: 767px) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/people-office-min.jpg);
   }
 }
 
-@media (max-width: 767px) and (min-resolution: 2x) {
+@media (max-width: 767px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/people-office@2x-min.jpg);
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/people-office-min.jpg);
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) and (min-resolution: 2x) {
+@media (min-width: 768px) and (max-width: 1157px) and  (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/people-office@2x-min.jpg);
   }
 }
 
-@media (min-width: 1158px) {
+@media screen and (min-width: 1158px) {
   .hero-section {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/people-office-min.jpg);
   }
 }
 
-@media (min-width: 1158px) and (min-resolution: 2x) {
+@media (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url(../images/hero-section/people-office@2x-min.jpg);
